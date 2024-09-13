@@ -123,7 +123,7 @@ nav {
   display: block;
   position: absolute;
   top: 0; /*розміщення елемента*/
-  right: 0;
+  left: 0;
 }
 
 ul {
