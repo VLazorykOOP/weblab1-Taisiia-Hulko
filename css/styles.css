@@ -128,3 +128,20 @@ footer {
   background-color: #f0f0f0;
   border-top: 1px solid #ddd;
 }
+
+table {
+  width: 100%; /* Встановлюємо ширину таблиці на 100% */
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 5px; /* Відстань між комірками (ігнорується з border-collapse: collapse) */
+  table-layout: auto; /* Автоматичне підлаштування ширини стовпців */
+  empty-cells: show; /* Показувати межі порожніх комірок */
+}
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+caption {
+  caption-side: top; /* Заголовок таблиці зверху */
+}
