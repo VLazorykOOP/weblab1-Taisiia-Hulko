@@ -134,7 +134,6 @@ table {
   border: 1px solid black;
   border-collapse: collapse;
   border-spacing: 5px; /* Відстань між комірками (ігнорується з border-collapse: collapse) */
-  table-layout: auto; /* Автоматичне підлаштування ширини стовпців */
   empty-cells: show; /* Показувати межі порожніх комірок */
 }
 th, td {
