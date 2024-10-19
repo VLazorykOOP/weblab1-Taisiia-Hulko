@@ -100,50 +100,50 @@
     <section>
       <fieldset>
         <legend>Інформація про товар</legend>
-        <form action="#" method="POST" id="product-form" target="_self" autocomplete="on" accept-charset="UTF-8" dir="ltr">
+        <form action="#" method="POST" id="product-form" name="productForm" target="_self" autocomplete="on" accept-charset="UTF-8" dir="ltr">
             <div class="form-group">
                 <label for="product-name" class="form-label">Назва товару:</label>
-                <input type="text" id="product-name" name="product-name" placeholder="Введіть назву товару" required>
+                <input type="text" id="product-name" name="product-name" dir="ltr" placeholder="Введіть назву товару" required autofocus>
             </div>
 
             <div class="form-group">
                 <label for="product-category" class="form-label">Категорія:</label>
                 <select id="product-category" name="product-category" required class="form-select" lang="uk" title="Виберіть категорію" autofocus>
-                    <option value="дивани" label="Дивани">Дивани</option>
-                    <option value="шафи" label="Шафи">Шафи</option>
-                    <option value="ліжка" label="Ліжка">Ліжка</option>
-                    <option value="стільці" label="Стільці">Стільці</option>
+                    <option value="дивани" id="option-sofas" label="Дивани">Дивани</option>
+                    <option value="шафи" id="option-cabinets" label="Шафи">Шафи</option>
+                    <option value="ліжка" id="option-beds" label="Ліжка">Ліжка</option>
+                    <option value="стільці" id="option-chairs" label="Стільці">Стільці</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="product-rating" class="form-label">Рейтинг:</label>
-                <input type="number" id="product-rating" name="product-rating" min="0" max="5" step="0.1" required>
+                <input type="number" id="product-rating" name="product-rating" dir="ltr" min="0" max="5" step="0.1" required>
             </div>
 
             <div class="form-group">
                 <label for="product-price" class="form-label">Ціна:</label>
-                <input type="number" id="product-price" name="product-price" placeholder="Ціна у грн" required step="0.01" max="10000">
+                <input type="number" id="product-price" name="product-price" dir="ltr" placeholder="Ціна у грн" required step="0.01" max="10000">
             </div>
 
             <div class="form-group">
                 <label for="product-material" class="form-label">Матеріал:</label>
-                <input type="text" id="product-material" name="product-material" placeholder="Введіть матеріал" required>
+                <input type="text" id="product-material" name="product-material" dir="ltr" placeholder="Введіть матеріал" required>
             </div>
 
             <div class="form-group">
                 <label for="product-supplier" class="form-label">Постачальник:</label>
-                <input type="text" id="product-supplier" name="product-supplier" placeholder="Введіть назву постачальника" required>
+                <input type="text" id="product-supplier" name="product-supplier" dir="ltr" placeholder="Введіть назву постачальника" required>
             </div>
 
             <div class="form-group">
                 <label for="product-image" class="form-label">Завантажити зображення:</label>
-                <input type="file" id="product-image" name="product-image" accept="image/*">
+                <input type="file" id="product-image" name="product-image" accept="image/*" multiple>
             </div>
 
             <div class="form-group">
                 <label for="product-features" class="form-label">Опис товару:</label>
-                <textarea id="product-features" name="product-features" rows="4" placeholder="Опис особливостей" required title="Опис товару" lang="uk" minlength="10"></textarea>
+                <textarea id="product-features" name="product-features" rows="4" dir="ltr" placeholder="Опис особливостей" required title="Опис товару" lang="uk"></textarea>
             </div>
 
             <button type="submit" name="submit" formtarget="_self" autofocus>Відправити інформацію</button>
@@ -154,7 +154,7 @@
  
         <fieldset>
             <legend>Додаткова інформація</legend>
-            <meter value="0.7" min="0" max="1" optimum="0.8" class="form-meter"></meter>
+            <meter value="0.7" min="0" max="1" optimum="0.8" class="form-meter" dir="ltr"></meter>
             <details lang="uk" title="Деталі про форму" open>
                 <summary>Додаткові деталі</summary>
                 Ця форма допомагає клієнтам швидко та зручно залишати інформацію про меблі, такі як дивани, ліжка, стільці або шафи. Завдяки цьому ви можете легко додати товар до каталогу та забезпечити детальний опис його характеристик.
@@ -163,7 +163,7 @@
         
         <fieldset>
             <legend>Відгуки про товар</legend>
-            <textarea id="product-reviews" name="product-reviews" rows="4" cols="50" placeholder="Введіть відгуки про товар" style="resize: none;"></textarea><br><br>
+            <textarea id="product-reviews" name="product-reviews" rows="4" cols="50" placeholder="Поділіться думкою про нашу продукцію!" style="resize: none;"></textarea><br><br>
         </fieldset>
     </section>
 
